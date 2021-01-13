@@ -7,11 +7,10 @@ branch = "git branch -M main"
 push = "git push origin main --force"
 
 
-def initGit () :
+def initGit ():
 
     repo_url = input("Repository url : ")
     add_origin = "git remote add origin "+repo_url
-
 
     sp.call(init,shell=True)
     sp.call(add_files,shell=True)
@@ -21,6 +20,7 @@ def initGit () :
     sp.call(push,shell=True)
 
 def updateRepo():
+
     sp.call(add_files,shell=True)
     sp.call(commit,shell=True)
     sp.call(push,shell=True)

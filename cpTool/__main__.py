@@ -1,44 +1,61 @@
 import os
 import sys
-import subprocess as sp 
+import subprocess as sp
+import optparse as op
 
-import customModules.readmeFIleGenerate as readme
-import api
-import git
+import cpTool.customModules.readmeFIleGenerator as readme
+import cpTool.git as git
+import cpTool.api as api
 
 
 def get_arguments():
 
-    argument = sys.argv
 
-    if len(argument) == 1 or len(argument) > 2:
-        print("\n[-] Please use --help  for more info")
-        exit()
+    parser = op.OptionParser();
+    parser.add_option("-c","--config",dest="configure",help="confiure local space for git")
+    parser.add_option("-j","--judge",dest="judge",help="online judge")
 
-    else:
-        if argument[1] == "--cf" or argument[1] == "--codeforces":
-            return "cf"
-            # print("Ok cf")
+    (options,arguments) = parser.parse_args()
 
-        elif argument[1] == "--init":
 
-            # print("Generating git")
-            return "git"
+    if options.judge == "codeforces" :
+        return "cf"
 
-        elif argument[1] == "-h" or argument[1] == "--help":
+    elif options.configure == "init":
+        return "git"
 
-            print("\nusage: cp-tool [option] ..... \n")
+    else :
+        parser.error("\n-c \t : \t to initialize git repo\n--cf \t : \t to generate solved problems from codeforces\n--help \t : \t for more info \n")
 
-            print("--init \t : \t to initialize git repo\n--cf \t : \t to generate solved problems from codeforces\n--help \t : \t for more info \n")
-            exit()
+    # if len(argument) == 1 or len(argument) > 2:
+    #     print("\n[-] Please use --help  for more info")
+        
+    #     exit()
 
-        else:
-            print("\n[-] Please use --help  for more info\n")
-            exit()
+    # else:
+    #     if argument[1] == "--cf" or argument[1] == "--codeforces":
+    #         return "cf"
+    #         # print("Ok cf")
+
+    #     elif argument[1] == "--init":
+
+    #         # print("Generating git")
+    #         return "git"
+
+    #     elif argument[1] == "-h" or argument[1] == "--help":
+
+    #         print("\nusage: cp-tool [option] ..... \n")
+
+    #         print(
+    #             "--init \t : \t to initialize git repo\n--cf \t : \t to generate solved problems from codeforces\n--help \t : \t for more info \n")
+    #         exit()
+
+    #     else:
+    #         print("\n[-] Please use --help  for more info\n")
+    #         exit()
 
 
 def createDir():
-
     while (1):
         try:
             createDir()
@@ -50,7 +67,6 @@ def createDir():
 
 
 def main(argument):
-
     username = input("Enter codeforces handle : ")
 
     if argument == "git":

@@ -1,4 +1,4 @@
-import customModules.htmlGenerator as html
+import cpTool.customModules.htmlGenerator as html
 
 def generateMarkdownFile(file,repo_name,user_info,repos):
 
