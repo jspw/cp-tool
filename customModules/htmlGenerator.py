@@ -17,7 +17,7 @@ new_line = "\n"
 def tableDataCreate(data):
     # "<td>data</td>"
     html = table_data_start + data + table_data_end
-    print(html)
+    # print(html)
     return html
 
 

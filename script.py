@@ -21,7 +21,7 @@ import api
 
 main_directory = os.getcwd()
 
-repo_name = "My Cp Track"
+repo_name = input("Enter your repository name : ")
 
 filePath = os.path.join(main_directory, 'test.md')
 
@@ -37,20 +37,8 @@ isFileExists = os.path.exists(filePath)
 #     file.close()
 
 
-user_info = {
-    "handle": "Shifat",
-    "rating": "1030",
-    "maxRating": "1366",
-    "contribution": "16",
-    "rank": "newbie",
-    "maxRank": "pupil",
-    "registrationTimeSeconds": "2012",
-    "organization": "Software Engineering , SUST",
-    "avatar": "https://codeforces.com//userpic.codeforces.com/713637/avatar/c741af7877c783b4.jpg"
-
-}
+user_info = api.getUserInfo()
 
 repos =  api.getSubmissions()
-
 
 readme.createReadmeFile(repo_name, user_info, repos)

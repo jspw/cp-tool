@@ -1,4 +1,4 @@
-# My Cp Track
+# My Problem Solving
 
 ## Intro
 
@@ -6,18 +6,18 @@ This is a repository to keep track of my problem solving practicse.
 For now, It contains all the problems i have solved of 
 - **[Codeforces](https://codeforces.com/)** 
 
-## User Details ([Shifat](https://codeforces.com/profile/Shifat))
+## User Details ([ShifaT57](https://codeforces.com/profile/ShifaT57))
 
 ```.json
 {
-	"handle" : "Shifat",
+	"handle" : "ShifaT57",
 	"organization" : "Software Engineering , SUST",
 	"rank" : "newbie",
 	"rating" : 1030,
 	"contribution" : 16,
 	"maxRank" : "pupil",
 	"maxRating" : 1366,
-	"Joined" : "2012",
+	"Joined" : "2018",
 }
 
 ```
