@@ -1,6 +1,6 @@
 # cp-tool (UnderDev\*)
 
-**cp-tool** is a online judge problem solving auto generator. It gathers all the problem you have solved in a online judge and generates a git repository for you.
+**cp-tool** is an auto generator for solved problems at different online judges. It gathers all the problems you have solved at an online judge and generates a git repository for you.
 
 Generated [Sample](SAMPLE.md) markdown file.
 
