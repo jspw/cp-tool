@@ -39,11 +39,11 @@ def generateMarkdownFile(file,repo_name,user_info,repos):
     file.write(
         '<table align="center" border = "0px" cellpadding ="2px" cellspacing ="2px" >\n')
 
-    file.write("<tr><th>Probelm</th><th>Catagory</th><th>Rating</th><th>Tags</th><th>Solution</th><th>Submission Time</th></tr>\n")
+    file.write("<tr><th>#</th><th>Probelm</th><th>Catagory</th><th>Rating</th><th>Tags</th><th>Solution</th><th>Submission Time</th></tr>\n")
 
     for i in range(len(repos)):
 
-        table_body = html.table_row_start + html.tableDataCreate(html.linkCreate(repos[i]["problem_link"], repos[i]["problem_name"])) + html.tableDataCreate(repos[i]["index"]) + html.tableDataCreate(repos[i]["rating"]) + html.tableDataCreate(
+        table_body = html.table_row_start + html.tableDataCreate(str(len(repos)-i)) + html.tableDataCreate(html.linkCreate(repos[i]["problem_link"], repos[i]["problem_name"])) + html.tableDataCreate(repos[i]["index"]) + html.tableDataCreate(repos[i]["rating"]) + html.tableDataCreate(
             repos[i]["tags"]) + html.tableDataCreate(html.linkCreate(repos[i]["solution_link"], repos[i]["programmingLanguage"])) + html.tableDataCreate(repos[i]["submission_time"]) + html.table_row_end
 
         file.write(table_body)
