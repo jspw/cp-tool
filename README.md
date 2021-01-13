@@ -5,7 +5,7 @@
 
 **Note :** For now it only creates the README.md file
 
-Generated [Sample](SAMPLE.md) markdown file.
+Generated [Sample](cp-tool/SAMPLE.md) markdown file.
 
 ## Supported Platforms
 
