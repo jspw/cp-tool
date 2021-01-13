@@ -1,10 +1,10 @@
 # cp-tool
 
-![](https://img.shields.io/badge/version-1.0.1-blue) ![](https://img.shields.io/badge/license-GNU3-brightgreen)
+![](https://img.shields.io/badge/version-1.1.1-blue) ![](https://img.shields.io/badge/license-GNU3-brightgreen)
 
 **cp-tool** is an auto generator for solved problems at different online judges. It gathers all the problems you have solved at an online judge and generates a git repository for you.
 
-Generated [Sample](cpTool/SAMPLE.md) markdown file.
+Generated [Sample](https://github.com/jspw/cp-tool-sample) markdown file.
 
 ## Supported Platforms
 
@@ -29,13 +29,13 @@ Generated [Sample](cpTool/SAMPLE.md) markdown file.
 
       >     cp-tool --init
 
-      ![](images/init.png)
+      ![](https://dev-to-uploads.s3.amazonaws.com/i/s7ja0xgwrft0r5oq4k51.png)
 
   - Update submissions :
 
     >      cp-tool --cf
 
-    ![](images/update.png)
+    ![](https://dev-to-uploads.s3.amazonaws.com/i/zl4k70i4cqm6ovcweh6w.png)
 
 ## License
 

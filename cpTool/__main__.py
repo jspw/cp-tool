@@ -18,41 +18,14 @@ def get_arguments():
     (options,arguments) = parser.parse_args()
 
 
-    if options.judge == "codeforces" :
-        return "cf"
-
-    elif options.configure == "init":
+    if options.judge == "codeforces" and options.configure == "init" :
         return "git"
 
+    elif options.judge == "codeforces" and options.configure == "update":
+        return "update"
+
     else :
-        parser.error("\n-c \t : \t to initialize git repo\n--cf \t : \t to generate solved problems from codeforces\n--help \t : \t for more info \n")
-
-    # if len(argument) == 1 or len(argument) > 2:
-    #     print("\n[-] Please use --help  for more info")
-        
-    #     exit()
-
-    # else:
-    #     if argument[1] == "--cf" or argument[1] == "--codeforces":
-    #         return "cf"
-    #         # print("Ok cf")
-
-    #     elif argument[1] == "--init":
-
-    #         # print("Generating git")
-    #         return "git"
-
-    #     elif argument[1] == "-h" or argument[1] == "--help":
-
-    #         print("\nusage: cp-tool [option] ..... \n")
-
-    #         print(
-    #             "--init \t : \t to initialize git repo\n--cf \t : \t to generate solved problems from codeforces\n--help \t : \t for more info \n")
-    #         exit()
-
-    #     else:
-    #         print("\n[-] Please use --help  for more info\n")
-    #         exit()
+        parser.error("\n-c \t : \t use '-c update' to update repo or '-c init to initialize repo\n-j \t : \t use '-j codeforces'\n--help \t : \t for more info contact 'mhshifat757@gmail.com' \n")
 
 
 def createDir():
@@ -97,7 +70,7 @@ def main(argument):
 
         git.initGit()
 
-    elif argument == "cf":
+    elif argument == "update":
 
         repo_path = current_path = os.getcwd()
 
