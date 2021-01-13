@@ -25,7 +25,7 @@ Generated [Sample](SAMPLE.md) markdown file.
 
 >     git clone https://github.com/jspw/cp-tool.git
 
->     cd cp-tools
+>     cd cp-tool/cp-tool
 
 >     python script.py
 
