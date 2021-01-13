@@ -4,9 +4,6 @@
 
 **cp-tool** is an auto generator for solved problems at different online judges. It gathers all the problems you have solved at an online judge and generates a git repository for you.
 
-
-**Note :** For now it only creates the README.md file
-
 Generated [Sample](cp-tool/SAMPLE.md) markdown file.
 
 ## Supported Platforms
@@ -15,10 +12,31 @@ Generated [Sample](cp-tool/SAMPLE.md) markdown file.
 
 ## Requirments
 
-  - python >=3.6
+- python >=3.6
 
+## Instruction
 
-## Usage
+- ### Installation
 
 >     pip install cp-tool
 
+- ### Usage
+
+  - Init with git repo :
+
+    - Create a git repository first
+    - Then init
+
+      >     cp-tool --init
+
+      ![](images/init.png)
+
+  - Update submissions :
+
+    >      cp-tool --cf
+
+    ![](images/update.png)
+
+## License
+
+[GNU 3](LICENSE)

@@ -1,14 +1,7 @@
 import requests
 import datetime
 
-apiUrl = "https://codeforces.com/api/user.status"
-
-username = input("Enter handle : ")
-
-parameters = {"handle": username}
-
-
-def getUserInfo():
+def getUserInfo(username):
     print("Getting user info ............")
     try:
         req = requests.get(
@@ -42,7 +35,11 @@ def getUserInfo():
         print(error)
 
 
-def getSubmissions():
+def getSubmissions(username):
+
+    apiUrl = "https://codeforces.com/api/user.status"
+
+    parameters = {"handle": username}
 
     print("Generating Submissions .......")
 
@@ -112,4 +109,3 @@ def getSubmissions():
         print(error)
 
 
-# getSubmissions()
