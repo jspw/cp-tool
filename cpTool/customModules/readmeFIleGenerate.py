@@ -51,8 +51,8 @@ def generateMarkdownFile(file,repo_name,user_info,repos):
     file.write("</table>\n")
 
 
-def createReadmeFile(repo_name,user_info,repos):
-    file = open('SAMPLE.md', 'w')
+def createReadmeFile(file_name,repo_name,user_info,repos):
+    file = open(file_name, 'w')
 
     generateMarkdownFile(file,repo_name,user_info,repos)
 

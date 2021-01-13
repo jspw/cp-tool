@@ -1,6 +1,6 @@
-# cp-tool (UnderDev\*)
+# cp-tool
 
-![](https://img.shields.io/badge/version-1.0.0-blue) ![](https://img.shields.io/badge/license-GNU3-brightgreen)
+![](https://img.shields.io/badge/version-1.0.1-blue) ![](https://img.shields.io/badge/license-GNU3-brightgreen)
 
 **cp-tool** is an auto generator for solved problems at different online judges. It gathers all the problems you have solved at an online judge and generates a git repository for you.
 
@@ -15,19 +15,10 @@ Generated [Sample](cp-tool/SAMPLE.md) markdown file.
 
 ## Requirments
 
-- Language
-
   - python >=3.6
 
-- Library/packagesi
-
-  - request
 
 ## Usage
 
->     git clone https://github.com/jspw/cp-tool.git
-
->     cd cp-tool/cp-tool
-
->     python script.py
+>     pip install cp-tool
 
