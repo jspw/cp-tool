@@ -2,6 +2,9 @@
 
 **cp-tool** is an auto generator for solved problems at different online judges. It gathers all the problems you have solved at an online judge and generates a git repository for you.
 
+
+**Note :** For now it only creates the README.md file
+
 Generated [Sample](SAMPLE.md) markdown file.
 
 ## Supported Platforms
