@@ -42,3 +42,7 @@ user_info = api.getUserInfo()
 repos =  api.getSubmissions()
 
 readme.createReadmeFile(repo_name, user_info, repos)
+
+print("Done!")
+
+print("Thanks for using cp-tool")

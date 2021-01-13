@@ -2,9 +2,13 @@ import customModules.htmlGenerator as html
 
 def generateMarkdownFile(file,repo_name,user_info,repos):
 
+    print("Creating markdown file .......")
+
     file.write("# " + repo_name + "\n\n")
 
     file.write("## Intro\n\n")
+
+    file.write(">\tAutomated by [cp-tool](https://github.com/jspw/cp-tool)\n\n")
 
     file.write(
         "This is a repository to keep track of my problem solving practicse.\nFor now, It contains all the problems i have solved of \n- **[Codeforces](https://codeforces.com/)** \n\n")

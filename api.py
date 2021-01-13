@@ -9,6 +9,7 @@ parameters = {"handle": username}
 
 
 def getUserInfo():
+    print("Getting user info ............")
     try:
         req = requests.get(
             "https://codeforces.com/api/user.info?handles=" + username)
@@ -42,6 +43,8 @@ def getUserInfo():
 
 
 def getSubmissions():
+
+    print("Generating Submissions .......")
 
     submissions = []
 
