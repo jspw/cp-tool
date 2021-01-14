@@ -39,7 +39,7 @@ def createDir():
             print(error)
 
 
-def main(argument):
+def executte(argument):
     username = input("Enter codeforces handle : ")
 
     if argument == "git":
@@ -91,7 +91,7 @@ def main(argument):
     print("Thanks for using cp-tool")
 
 
-if __name__ == "__main__":
+def main():
 
     print('''
                          ____ ____     _____           _ 
@@ -104,4 +104,11 @@ if __name__ == "__main__":
 
     argument = get_arguments()
 
-    main(argument)
+    executte(argument)
+
+    
+
+if __name__ == "__main__":
+    main()
+
+
