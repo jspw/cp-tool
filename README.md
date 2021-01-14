@@ -24,7 +24,7 @@ Generated [Sample Git Rep](https://github.com/jspw/cp-tool-sample) by [cp-tool](
 
   - Windows :
 
-  >     python -m pip install cp-*tool*
+  >     python -m pip install cp-tool
 
 **Note : Please updated version**
 
