@@ -1,7 +1,7 @@
+import io
 import cpTool.customModules.htmlGenerator as html
 
 def generateMarkdownFile(file,repo_name,user_info,repos):
-
     print("Creating markdown file .......")
 
     file.write("# " + repo_name + "\n\n")
@@ -52,8 +52,8 @@ def generateMarkdownFile(file,repo_name,user_info,repos):
 
 
 def createReadmeFile(file_name,repo_name,user_info,repos):
-    file = open(file_name, 'w')
+    with open(file_name, mode='w', encoding='UTF-8', errors='strict', buffering=1) as file:
 
-    generateMarkdownFile(file,repo_name,user_info,repos)
+        generateMarkdownFile(file,repo_name,user_info,repos)
 
-    file.close()
+        file.close()
