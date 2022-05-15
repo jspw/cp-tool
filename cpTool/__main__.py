@@ -25,7 +25,7 @@ def get_arguments():
         return "update"
 
     else :
-        parser.error("\n-c \t : \t use '-c update' to update repo or '-c init to initialize repo\n-j \t : \t use '-j codeforces'\n--help \t : \t for more info contact 'mhshifat757@gmail.com' \n")
+        parser.error("\n-c \t : \t use '-c update' to update repo or '-c init' to initialize repo\n-j \t : \t use '-j codeforces'\n--help \t : \t for more info contact 'mhshifat757@gmail.com' \n")
 
 
 def createDir():
@@ -86,7 +86,7 @@ def executte(argument):
 
         git.updateRepo()
 
-    print("Done!")
+    # print("Done!")
 
     print("Thanks for using cp-tool")
 
