@@ -1,6 +1,6 @@
 # cp-tool
 
-![](https://img.shields.io/badge/version-2.1.1-blue) ![](https://img.shields.io/badge/license-MIT-brightgreen)
+![](https://img.shields.io/badge/version-2.1.2-blue) ![](https://img.shields.io/badge/license-MIT-brightgreen)
 
 **cp-tool** is an auto generator for solved problems at different online judges. It gathers all the problems you have solved at an online judge and generates a git repository for you.
 
@@ -26,7 +26,7 @@ Generated [Sample Git Rep](https://github.com/jspw/cp-tool-sample) by [cp-tool](
 
   >     python -m pip install cp-tool
 
-**Note : Please updated version**
+**Note : Please use updated version**
 
 - ### Upgrade :
 
@@ -46,7 +46,7 @@ Generated [Sample Git Rep](https://github.com/jspw/cp-tool-sample) by [cp-tool](
 
   - Init with git repo :
 
-    - Create a git repository first
+    - Create a git repository first ([Github](www.github.com))
     - Then init
 
       >     cp-tool -c init -j codeforces

@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="cp-tool",
-    version="2.1.1",
+    version="2.1.2",
     author="jspw",
     author_email="mhshifat757@gmail.com",
     description="cp-tool is an auto generator tool for solved problems at different online judges",
