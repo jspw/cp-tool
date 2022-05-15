@@ -11,7 +11,8 @@ def generateMarkdownFile(file,repo_name,user_info,repos):
     file.write(">\tAutomated by [cp-tool](https://github.com/jspw/cp-tool)\n\n")
 
     file.write(
-        "This is a repository to keep track of my problem solving practice.\nFor now, It contains all the problems I have solved at \n- **[Codeforces](https://codeforces.com/)** \n\n")
+        "This is a repository to keep track of my problem solving practice.\nFor now, It contains all the problems I "
+        "have solved at \n- **[Codeforces](https://codeforces.com/)** \n\n")
 
     file.write("## User Details ([" + user_info["handle"] +
                "](https://codeforces.com/profile/" + user_info["handle"] + "))\n\n")
@@ -39,7 +40,8 @@ def generateMarkdownFile(file,repo_name,user_info,repos):
     file.write(
         '<table align="center" border = "0px" cellpadding ="2px" cellspacing ="2px" >\n')
 
-    file.write("<tr><th>#</th><th>Probelm</th><th>Catagory</th><th>Rating</th><th>Tags</th><th>Solution</th><th>Submission Time</th></tr>\n")
+    file.write("<tr><th>#</th><th>Problem</th><th>Category</th><th>Rating</th><th>Tags</th><th>Solution</th><th"
+               ">Submission Time</th></tr>\n")
 
     for i in range(len(repos)):
 

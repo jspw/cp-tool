@@ -9,27 +9,25 @@ import cpTool.api as api
 
 
 def get_arguments():
-
-
     parser = op.OptionParser();
-    parser.add_option("-c","--config",dest="configure",help="confiure local space for git")
-    parser.add_option("-j","--judge",dest="judge",help="online judge")
+    parser.add_option("-c", "--config", dest="configure", help="confiure local space for git")
+    parser.add_option("-j", "--judge", dest="judge", help="online judge")
 
-    (options,arguments) = parser.parse_args()
+    (options, arguments) = parser.parse_args()
 
-
-    if options.judge == "codeforces" and options.configure == "init" :
+    if options.judge == "codeforces" and options.configure == "init":
         return "git"
 
     elif options.judge == "codeforces" and options.configure == "update":
         return "update"
 
-    else :
-        parser.error("\n-c \t : \t use '-c update' to update repo or '-c init' to initialize repo\n-j \t : \t use '-j codeforces'\n--help \t : \t for more info contact 'mhshifat757@gmail.com' \n")
+    else:
+        parser.error("\n-c \t : \t use '-c update' to update repo or '-c init' to initialize repo\n-j \t : \t use '-j "
+                     "codeforces'\n--help \t : \t for more info contact 'mhshifat757@gmail.com' \n")
 
 
 def createDir():
-    while (1):
+    while 1:
         try:
             createDir()
             break
@@ -39,7 +37,7 @@ def createDir():
             print(error)
 
 
-def executte(argument):
+def execute(argument):
     username = input("Enter codeforces handle : ")
 
     if argument == "git":
@@ -92,7 +90,6 @@ def executte(argument):
 
 
 def main():
-
     print('''
                          ____ ____     _____           _ 
                         / ___|  _ \   |_   _|__   ___ | |
@@ -104,11 +101,8 @@ def main():
 
     argument = get_arguments()
 
-    executte(argument)
+    execute(argument)
 
-    
 
 if __name__ == "__main__":
     main()
-
-

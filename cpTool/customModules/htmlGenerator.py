@@ -14,6 +14,7 @@ end = ">"
 link_end = "</a>"
 new_line = "\n"
 
+
 def tableDataCreate(data):
     # "<td>data</td>"
     html = table_data_start + data + table_data_end
@@ -25,7 +26,3 @@ def linkCreate(link, value):
     # "<a href="link" > value </a>"
     html = link_start + href + link + end + value + link_end
     return html
-
-# def tableRow(n,datas):
-#     for i in range(datas):
-

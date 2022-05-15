@@ -1,4 +1,4 @@
-import subprocess as sp 
+import subprocess as sp
 
 init = "git init"
 add_files = "git add ."
@@ -7,21 +7,19 @@ branch = "git branch -M main"
 push = "git push origin main --force"
 
 
-def initGit ():
-
+def initGit():
     repo_url = input("Repository url : ")
-    add_origin = "git remote add origin "+repo_url
+    add_origin = "git remote add origin " + repo_url
 
-    sp.call(init,shell=True)
-    sp.call(add_files,shell=True)
-    sp.call(commit,shell=True)
-    sp.call(branch,shell=True)
-    sp.call(add_origin,shell=True)
-    sp.call(push,shell=True)
+    sp.call(init, shell=True)
+    sp.call(add_files, shell=True)
+    sp.call(commit, shell=True)
+    sp.call(branch, shell=True)
+    sp.call(add_origin, shell=True)
+    sp.call(push, shell=True)
+
 
 def updateRepo():
-
-    sp.call(add_files,shell=True)
-    sp.call(commit,shell=True)
-    sp.call(push,shell=True)
-
+    sp.call(add_files, shell=True)
+    sp.call(commit, shell=True)
+    sp.call(push, shell=True)

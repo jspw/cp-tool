@@ -1,6 +1,7 @@
 import requests
 import datetime
 
+
 def getUserInfo(username):
     print("Getting user info ............")
     try:
@@ -25,7 +26,8 @@ def getUserInfo(username):
                 "contribution": str(data["result"][0]["contribution"]),
                 "rank": data["result"][0]["rank"],
                 "maxRank": data["result"][0]["maxRank"],
-                "registrationTimeSeconds": datetime.datetime.utcfromtimestamp(data["result"][0]["registrationTimeSeconds"]).strftime('%Y'),
+                "registrationTimeSeconds": datetime.datetime.utcfromtimestamp(
+                    data["result"][0]["registrationTimeSeconds"]).strftime('%Y'),
                 "organization": organization,
                 "avatar": data["result"][0]["avatar"]
 
@@ -36,7 +38,6 @@ def getUserInfo(username):
 
 
 def getSubmissions(username):
-
     apiUrl = "https://codeforces.com/api/user.status"
 
     parameters = {"handle": username}
@@ -52,7 +53,7 @@ def getSubmissions(username):
 
         # print(req.json())
 
-        if(data['status'] == 'OK'):
+        if data['status'] == 'OK':
             # submissions = data['result'][0]
 
             demo = data['result']
@@ -75,7 +76,7 @@ def getSubmissions(username):
                 else:
                     rating = "undefined"
 
-                if(demo[i]["verdict"] == 'OK'):
+                if demo[i]["verdict"] == 'OK':
                     submissions.append({
                         "problem_name": demo[i]["problem"]["name"],
 
@@ -85,16 +86,17 @@ def getSubmissions(username):
 
                         "contest_id": str(contest_id),
 
-                        "problem_link": "https://codeforces.com/contest/"+contest_id+"/problem/"+demo[i]["problem"]["index"],
+                        "problem_link": "https://codeforces.com/contest/" + contest_id + "/problem/" +
+                                        demo[i]["problem"]["index"],
 
-                        "solution_link": "https://codeforces.com/contest/"+contest_id+"/submission/" + str(demo[i]["id"]),
+                        "solution_link": "https://codeforces.com/contest/" + contest_id + "/submission/" + str(
+                            demo[i]["id"]),
 
                         "rating": str(rating),
 
                         "tags": ', '.join([str(elem) for elem in (demo[i]["problem"]["tags"])]),
 
                         "programmingLanguage": demo[i]["programmingLanguage"],
-
 
                         "submission_time": datetime.datetime.utcfromtimestamp(
                             demo[i]["creationTimeSeconds"]).strftime('%d %B %Y %H:%M:%S'),
@@ -107,5 +109,3 @@ def getSubmissions(username):
 
     except requests.exceptions.RequestException as error:
         print(error)
-
-

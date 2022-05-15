@@ -8,7 +8,7 @@ setuptools.setup(
     version="2.1.2",
     author="jspw",
     author_email="mhshifat757@gmail.com",
-    description="cp-tool is an auto generator tool for solved problems at different online judges",
+    description="cp-tool is an auto generator tool for documenting solved problems at different online judges",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/jspw/cp-tool",
@@ -17,7 +17,7 @@ setuptools.setup(
     install_requires=["requests"],
     classifiers=[
         "Programming Language :: Python :: 3",
-       "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
