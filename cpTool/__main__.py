@@ -3,7 +3,7 @@ import sys
 import subprocess as sp
 import optparse as op
 
-import cpTool.customModules.readmeFIleGenerator as readme
+import cpTool.customModules.readmeFileGenerator as readme
 import cpTool.git as git
 import cpTool.api as api
 
